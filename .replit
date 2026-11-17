@@ -1,5 +1,5 @@
 entrypoint = "server.py"
-modules = ["python-3.11"]
+modules = ["python-3.12", "nodejs-20", "web", "nix"]
 run = "python3 server.py --host 0.0.0.0 --port 3000"
 hidden = [".git", "__pycache__", "data", "private-validation", "workspace-backups"]
 
@@ -12,3 +12,6 @@ run = ["python3", "server.py", "--host", "0.0.0.0", "--port", "3000"]
 [[ports]]
 internalPort = 3000
 externalPort = 80
+
+[nix]
+channel = "stable-25_05"
