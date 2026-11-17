@@ -1,0 +1,17 @@
+data/
+demo-data/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.log
+test-results/
+migration-test-data/
+private-validation/
+workspace-backups/
+tmp/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+AGENTS.md
