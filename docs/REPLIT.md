@@ -5,11 +5,9 @@ Hearth can be imported from its private GitHub repository into a Replit App. The
 ## Import and run the development workspace
 
 1. In Replit, choose **Create → Import from GitHub** and select the private Hearth repository.
-2. Open **Secrets** and add:
-   - `HEARTH_USERNAME` — normally `owner`
-   - `HEARTH_PASSWORD` — a unique password of at least 12 characters
-3. Select **Run**. The included `.replit` file starts `server.py` on `0.0.0.0` using Replit's `PORT` value.
-4. Open the preview and sign in with the two secrets above.
+2. In **Secrets**, set `HEARTH_PASSWORD` to a unique password of at least 12 characters. The username defaults to `owner` unless you set `HEARTH_USERNAME`.
+3. Select **Run** to start the **Run Hearth** workflow on `0.0.0.0:5000`.
+4. Open the preview in a new browser tab and sign in. Hearth blocks embedded frames, so use the standalone tab rather than the in-editor frame.
 
 The imported development workspace starts with an empty `data/` folder. Import records through Hearth after deciding where hosted production data will live.
 
